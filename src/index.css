@@ -33,6 +33,44 @@ body {
   background-color: #ffffff;
 }
 
+/* NAVBAR SPECIFIC STYLES - Ensure visibility */
+.navbar {
+  position: relative !important;
+  z-index: 1030 !important;
+  width: 100% !important;
+  display: block !important;
+  background-color: #f8f9fa !important;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.navbar-brand {
+  font-weight: 700 !important;
+  font-size: 1.8rem !important;
+  color: var(--primary-color) !important;
+  text-decoration: none !important;
+}
+
+.navbar-nav {
+  display: flex !important;
+}
+
+.navbar-nav .nav-link {
+  font-weight: 500;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+  color: #495057 !important;
+  text-decoration: none !important;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--primary-color) !important;
+}
+
+.navbar-nav .nav-link.active {
+  color: var(--primary-color) !important;
+  font-weight: 600;
+}
+
 /* Custom Bootstrap Overrides */
 .btn-primary {
   background-color: var(--primary-color);
@@ -98,23 +136,6 @@ body {
   height: 250px;
   object-fit: cover;
   width: 100%;
-}
-
-/* Navigation */
-.navbar-brand {
-  font-weight: 700;
-  font-size: 1.8rem;
-  color: var(--primary-color) !important;
-}
-
-.navbar-nav .nav-link {
-  font-weight: 500;
-  margin: 0 10px;
-  transition: color 0.3s ease;
-}
-
-.navbar-nav .nav-link:hover {
-  color: var(--primary-color) !important;
 }
 
 /* Footer */

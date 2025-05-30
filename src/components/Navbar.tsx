@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
   const location = useLocation();
+  console.log('Navbar component is rendering on route:', location.pathname);
 
   const isActive = (path: string) => {
     return location.pathname === path ? 'active' : '';
